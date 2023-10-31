@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+
+
+body{
+    background-color: #04364A;
+    color: #DAFFFB  ;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/*style header*/
+
+
+header{
+    height: 5vh;
+    padding-top: 10px;
+}
+
+header img {
+    height: 5vh;
+    transition-duration: .1s;
+    transition-timing-function: ease-in-out;
+}
+
+header img:hover{
+    height: 5.2vh;
+}
+
+header nav{
+    display: flex;
+    justify-content: end;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: fit-content;
+}
+
+header li{
+    width: 5vw;
+}
+
+/*style main*/
+
+.comeco{
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+}
+
+#sobre-mim{
+    margin-top: 30px;
+    font-size: large;
+}
+
+.container-main{
+    display: flex;
+    height: 95vh;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    margin-bottom: 5vh;
+}
+
+.introducao{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.parte1 h1{
+    font-size: 5vh;
+    text-align: start;
+}
+
+.parte2 h2{
+    font-size: 15vh;
+    display: flex;
+    text-align: center;
+    text-align: start;
+}
+
+/*style navegacao*/
+
+.navegacao{
+    height: fit-content;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container-main a{
+    text-decoration: none;
+    color: #64CCC5;
+    width: 15vw;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: start;
+    position: relative;
+    font-size: 4vh;
+}
+
+.container-main a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #64CCC5;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.container-main a:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h1, h2{
+    margin:0px;
+}
+
+.container-nav{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*style card*/
+.eu-e-foto{
+    width: 50vw;
+    display: flex;
+    border-radius: 19px;
+    gap: 20px;
+    /* box-shadow:  #DAFFFB; */
+    height: fit-content;
+}
+
+.card-foto{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-foto img{
+    width: 20vw;
+    border-radius: 15px;
+}
+
+/* Style título */
+
+.titulo{
+    height: fit-content;
+    max-width: 100vw;
+    background-color: #64CCC5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* style sobre mim */
+
+.container-sobre-mim{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+}
+
+
+
+/*style habilidades*/
+
+.habilidades{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+.skills h4{
+    font-size: 1.5em;
+}
+
+.skills li{
+    margin-top: 10px;
+}
+
+.skills{
+    box-shadow: 2px 2px 18px black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+/*Style objetivos*/
+
+.objetivos{
+    margin-left: 50px;
+    max-width: 60vh;
+}
+
+.objetivos h5{
+    font-size: 1.5em;
+}
+
+/* Style ensino */
+
+.ensino{
+    display:grid;
+}
