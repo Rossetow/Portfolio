@@ -13,6 +13,11 @@ body{
     font-family: 'Nunito Sans', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 
 /*style header*/
 
@@ -235,7 +240,7 @@ h1, h2{
 }
 
 .skills{
-    box-shadow: 2px 2px 18px black;
+    box-shadow: 2px 2px 18px #00000078;
     padding: 10px;
     border-radius: 15px;
     margin-right: 20px;
@@ -287,3 +292,48 @@ h1, h2{
 #senac-img{
     width: 50%;
 }
+
+/* Style projetos */
+
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-boxes{
+    display: flex;
+    padding: 0px 50px 0px 50px;
+}
+
+.container-boxes div{
+    display: flex;
+}
+
+.box-u{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    justify-content: center;
+}
+
+.box-projeto{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #176B87   ;
+    border-radius: 15px;
+}
+
+.ling-icon{
+    width: 10%;
+}
+
+.linguagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
