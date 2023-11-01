@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Corpo header -->
     <header>
         <nav>
+            <!-- Imagens redes sociais -->
             <ul>
                 <li>
                     <a href="https://github.com/Rossetow" target="_blank">
-                        <img style="background-color: white; border-radius: 50%;" src="github.png">
+                        <img src="img/github.png">
                     </a>
                 </li>
                 <li>
                     <a href="https://instagram.com/rossetow.rar?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">
-                        <img src="instagram.png">
+                        <img src="img/instagram.png">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/rossetow" target="_blank">
-                        <img src="linkedin.png">
+                        <img src="img/linkedin.png">
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+    <!-- Container home -->
     <section class="container-main">
         <div class="comeco">
             <section class="eu-e-foto">
@@ -38,15 +41,12 @@
                     <div class="parte2">
                         <h2>Rafael Rosseto</h2>
                     </div>
-                    <div class="parte3">
-                        <p></p>
-                    </div>
                 </section>
                 <div class="card-foto">
-                    <img src="foto-rafa.jpg" alt="">
+                    <img src="img/foto-rafa.jpg" alt="">
                 </div>
             </section>
-            <div id="sobre-mim">
+            <div id="texto-home">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu venenatis libero. Cras at cursus massa. Etiam id odio risus. Proin commodo elementum leo, eu facilisis turpis. Pellentesque libero mi, elementum eu elementum eget, condimentum ac mauris. Quisque sed congue est, non eleifend odio. Mauris et ligula auctor, tristique mauris quis, hendrerit augue. Aliquam sed nibh at erat interdum posuere id vel ligula. In hac habitasse platea dictumst. Morbi eros dolor, volutpat vel finibus eget, ultricies ac arcu. Praesent eget lectus nec urna finibus placerat quis cursus dui.</p>
             </div>
         </div>
@@ -57,16 +57,16 @@
             <div class="container-nav">
                 <nav>
                     <ul>
-                        <li><a href="">Sobre mim</a></li>
-                        <li><a href="">Projetos</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#sobre-mim">Sobre mim</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </aside>
     </section>
 
-    <section class="container-sobre-mim">
+    <section class="container-sobre-mim" id="sobre-mim">
         
         <div class="parte1-sobre-mim">
             <div class="habilidades">
@@ -106,24 +106,27 @@
         <div class="ensino">
             <h1>Educação</h1>
             <div class="container-escolas">
-                <div class="irb">
-                    <h4>Ensino Médio</h4>
-                    <img src="https://www.irbsl.com.br/2019/wp-content/uploads/2019/08/logo_preferencial-e1566870924212.png" alt="">
-                    <p></p>
+                <div class="escola-card">
+                    <h2>Ensino Médio</h2>
+                    <img src="/img/irb.png" alt="">
+                    <p>Instituto Rio Branco (2023)</p>
                 </div>
-                <div class="senac">
-                    <h4>Curso Técnico</h4>
-                    <img src="" alt="">
-                    <p></p>
+                <div class="escola-card">
+                    <h2>Curso Técnico</h2>
+                    <img id="senac-img" src="/img/senac.png" alt="">
+                    <p>Técnico em desenvolvimento de sistemas bilíngue - SenacRS (2022 - 2024)</p>
                 </div>
-                <div class="ingles">
-                    <h4>Inglês</h4>
-                    <img src="" alt="">
-                    <p></p>
+                <div class="escola-card">
+                    <h2>Inglês</h2>
+                    <img src="img/fisk.png" alt="">
+                    <p>Fisk (2016 - 2020)</p>
                 </div>
             </div>
             
         </div>
+    </section>
+    <section class="projetos" id="projetos">
+        
     </section>
 </body>
 </html>

@@ -56,7 +56,7 @@ header li{
     max-width: 50vw;
 }
 
-#sobre-mim{
+#texto-home{
     margin-top: 30px;
     font-size: large;
 }
@@ -251,5 +251,39 @@ h1, h2{
 /* Style ensino */
 
 .ensino{
-    display:grid;
+    margin-top: 80px;
+}
+
+.ensino h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.container-escolas{
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.escola-card{
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 10px;
+    justify-content: center;
+}
+
+.escola-card h2{
+    font-size: 30px;
+}
+
+.escola-card img{
+    width: 70%;
+    margin: auto;
+}
+
+#senac-img{
+    width: 50%;
 }
