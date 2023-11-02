@@ -128,10 +128,10 @@
     <section class="container-projetos" id="projetos">
         <h1 class="titulo-projetos">Projetos</h1>
         <div class="container-boxes">
-            <div class="box-u">
+            <div class="box-u" id="grid-boxes">
                 <div>
-                    <a href="" target="_blank" class="box-projeto">
-                        <h2>Projeto biblioteca em Java</h2>
+                    <a href="https://github.com/Rossetow/biblioteca" target="_blank" class="box-projeto">
+                        <h2>Biblioteca</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu venenatis libe</p>
                         <ul class="linguagens">
                             <li class="ling-icon">
@@ -141,7 +141,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="" target="_blank" class="box-projeto">
+                    <a href="https://github.com/Rossetow/LandingPage" target="_blank" class="box-projeto">
                         <h2>Landing page</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu venenatis libe</p>
                         <ul class="linguagens">
@@ -155,12 +155,51 @@
                     </a>
                 </div>
                 <div>
-                    <a href="" target="_blank" class="box-projeto">
+                    <a href="https://github.com/Rossetow/tche-foods-UC09" target="_blank" class="box-projeto">
                         <h2>TchêFoods</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu venenatis libe</p>
                         <ul class="linguagens">
                             <li class="ling-icon">
                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                            </li>
+                            <li class="ling-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="veja-mais-div"id="box-display">
+                    <a href="https://github.com/Rossetow/Projeto-Integrador" target="_blank" class="box-projeto">
+                        <h2>Aware</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu venenatis libe</p>
+                        <ul class="linguagens">
+                            <li class="ling-icon">                            
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                            </li>
+                            <li class="ling-icon">                            
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="veja-mais-div" id="box-display">
+                    <a href="" target="_blank" class="box-projeto">
+                        <h2>Trabalhando nisso....</h2>
+                        <p></p>
+                        <ul class="linguagens">
+                            <li class="ling-icon">
+                                <img src="" />
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+                <div class="veja-mais-div" id="box-display">
+                    <a href="" target="_blank" class="box-projeto">
+                        <h2>Trabalhando nisso....</h2>
+                        <p></p>
+                        <ul class="linguagens">
+                            <li class="ling-icon">
+                                <img src="" />
                             </li>
                         </ul>
                     </a>
@@ -169,11 +208,15 @@
             
             ent vou deixar esse esapcço reservado pra eles -->
             </div>
-            <button class="veja-mais">
-                Veja mais
-                <img src="/img/seta-baixo.jpg" alt="" srcset="">
-            </button>
         </div>
+        <button class="veja-mais" id="btn-veja-mais">
+            Veja mais
+            <img id="seta-veja-mais" src="/img/seta-baixo.jpg" alt="" srcset="">
+        </button>
+        <button class="veja-menos" id="btn-veja-menos">
+            Veja menos
+            <img id="seta-veja-menos" src="/img/seta-baixo.jpg" alt="" srcset="">
+        </button>
     </section>
     <section class="container-contato" id="contato">
         <h1 class="titulo-contato">Contato</h1>
@@ -182,9 +225,7 @@
                 <p>Fale comigo ou me siga nas redes sociais!</p>
                 <form class="form">
                     <input type="text" id="nomeid" placeholder="Insira seu nome..." required="required" name="nome" />
-        
-                    <input type="tel" id="foneid" placeholder="Insira seu telefone" name="fone" />
-        
+                
                     <input type="email" id="emailid" placeholder="Insira seu email..." name="email" />
         
                     <textarea placeholder="Deixe sua mensagem"></textarea>
@@ -226,5 +267,6 @@
             </ul>
         </div>
     </footer>
+    <script src="/script/script.js"></script>
 </body>
 </html>

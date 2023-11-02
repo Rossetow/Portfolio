@@ -314,9 +314,6 @@ h1, h2{
     padding: 0px 50px 0px 50px;
 }
 
-.container-boxes div{
-    display: flex;
-}
 
 .box-u{
     display: grid;
@@ -335,6 +332,10 @@ h1, h2{
     background-color: #0000005e   ;
     border-radius: 15px;
     transition-duration: .2s;
+}
+
+.veja-mais-div{
+    display: none;
 }
 
 .box-projeto:hover{
@@ -372,14 +373,36 @@ h1, h2{
     transition-duration: .3s;
 }
 
-.veja-mais img:hover{
-    transform: rotate(0deg);
-}
-
 .veja-mais:hover{
     cursor: pointer;
     background-color:#05445e;
 }
+
+.veja-menos{
+    height: 10vh;
+    text-align: center;
+    display: none;
+    align-items: center;
+    font-size: 30px;
+    background-color:#04364A;
+    color: #DAFFFB;
+    margin: 30px;
+    align-self: center;
+    border: none;
+    transition-duration: .2s;
+}
+
+.veja-menos img{
+    width: 40px;
+    color: #DAFFFB;
+    transition-duration: .3s;
+}
+
+.veja-menos:hover{
+    cursor: pointer;
+    background-color:#05445e;
+}
+
 
 /* style contato */
 
