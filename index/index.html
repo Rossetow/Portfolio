@@ -31,7 +31,7 @@
         </nav>
     </header>
     <!-- Container home -->
-    <section class="container-main">
+    <section class="container-main" id="home">
         <div class="comeco">
             <section class="eu-e-foto">
                 <section class="introducao">
@@ -126,7 +126,7 @@
         </div>
     </section>
     <section class="container-projetos" id="projetos">
-        <h1>Projetos</h1>
+        <h1 class="titulo-projetos">Projetos</h1>
         <div class="container-boxes">
             <div class="box-u">
                 <div>
@@ -165,8 +165,66 @@
                         </ul>
                     </a>
                 </div>
+                <!-- Aqui vai ter mais container que vao ficar display none mas tem que fazer com JS
+            
+            ent vou deixar esse esapcço reservado pra eles -->
+            </div>
+            <button class="veja-mais">
+                Veja mais
+                <img src="/img/seta-baixo.jpg" alt="" srcset="">
+            </button>
+        </div>
+    </section>
+    <section class="container-contato" id="contato">
+        <h1 class="titulo-contato">Contato</h1>
+        <div class="container-form">
+            <div class="form-contato">
+                <p>Fale comigo ou me siga nas redes sociais!</p>
+                <form class="form">
+                    <input type="text" id="nomeid" placeholder="Insira seu nome..." required="required" name="nome" />
+        
+                    <input type="tel" id="foneid" placeholder="Insira seu telefone" name="fone" />
+        
+                    <input type="email" id="emailid" placeholder="Insira seu email..." name="email" />
+        
+                    <textarea placeholder="Deixe sua mensagem"></textarea>
+                    <button class="button-enviar">Enviar</button>
+                </form>
+            </div>
+            <div class="redes-sociais-contato">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Rossetow" target="_blank">
+                            <img src="img/github.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/rossetow.rar?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                            <img src="img/instagram.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/rossetow" target="_blank">
+                            <img src="img/linkedin.png">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
+    <footer class="container-footer">
+        <div class="feito-por">
+            <p>Feito por Rafael Rosseto usando HTML5, CSS3 e JavaScript.</p>
+        </div>
+        <div class="sumario">
+            <h6>Sumário</h6>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre-mim">Sobre mim</a></li> 
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
