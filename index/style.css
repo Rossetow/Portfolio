@@ -368,7 +368,6 @@ h1, h2{
 
 .veja-mais img{
     width: 40px;
-    color: #DAFFFB;
     transform: rotate(-90deg);
     transition-duration: .3s;
 }
@@ -394,7 +393,6 @@ h1, h2{
 
 .veja-menos img{
     width: 40px;
-    color: #DAFFFB;
     transition-duration: .3s;
 }
 
