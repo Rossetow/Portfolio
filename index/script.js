@@ -7,55 +7,79 @@ var btnVejaMenos = document.getElementById("btn-veja-menos")
 var setaVejaMenos = document.getElementById("seta-veja-menos")
 
 
-btnVejaMais.onmouseover = function(){
+btnVejaMais.onmouseover = function () {
     setaVejaMais.style.transform = "rotate(0deg)"
 }
 
-btnVejaMais.onmouseout = function(){
+btnVejaMais.onmouseout = function () {
     setaVejaMais.style.transform = "rotate(-90deg)"
 }
 
-btnVejaMenos.onmouseover = function(){
+btnVejaMenos.onmouseover = function () {
     setaVejaMenos.style.transform = "rotate(-180deg)"
 }
 
-btnVejaMenos.onmouseout = function(){
+btnVejaMenos.onmouseout = function () {
     setaVejaMenos.style.transform = "rotate(0deg)"
 }
 
 
-btnVejaMais.onclick = function(){
-        var gridBoxes = document.getElementById("grid-boxes")
-        var boxDisplay = document.getElementsByClassName("veja-mais-div")
+btnVejaMais.onclick = function () {
+    var gridBoxes = document.getElementById("grid-boxes")
+    var boxDisplay = document.getElementsByClassName("veja-mais-div")
 
-        for (i =0; i < boxDisplay.length; i++)    {
+    for (i = 0; i < boxDisplay.length; i++) {
         boxDisplay[i].style.display = "flex"
         console.log("foi 1")
-        }
+    }
 
-        gridBoxes.style.gridTemplateRows = "1fr 1fr"
+    gridBoxes.style.gridTemplateRows = "1fr 1fr"
 
-        btnVejaMais.style.display = "none"
-        btnVejaMenos.style.display = "flex"
+    btnVejaMais.style.display = "none"
+    btnVejaMenos.style.display = "flex"
 
-        verMaisOpen = 1
+    verMaisOpen = 1
 }
 
-btnVejaMenos.onclick = function(){
+btnVejaMenos.onclick = function () {
     var gridBoxes = document.getElementById("grid-boxes")
-        var boxDisplay = document.getElementsByClassName("veja-mais-div")
+    var boxDisplay = document.getElementsByClassName("veja-mais-div")
 
-        for (i =0; i < boxDisplay.length; i++)    {
+    for (i = 0; i < boxDisplay.length; i++) {
         boxDisplay[i].style.display = "none"
         console.log("foi 1")
-        }
+    }
 
-        gridBoxes.style.gridTemplateRows = "none"
+    gridBoxes.style.gridTemplateRows = "none"
 
-        btnVejaMais.style.display = "flex"
-        btnVejaMenos.style.display = "none"
-        
-        setaVejaMais.style.transform = "rotate(-90deg)"
+    btnVejaMais.style.display = "flex"
+    btnVejaMenos.style.display = "none"
 
-        verMaisOpen=0
+    setaVejaMais.style.transform = "rotate(-90deg)"
+
+    verMaisOpen = 0
+}
+
+
+// Contact form functions 
+
+    function sendEmail() {
+    var params = {
+        from_nome: document.getElementById('nomeid').value,
+        email: document.getElementById('emailid').value,
+        message: document.getElementById('mensagem').value
+    }
+
+    const serviceID = 'service_0j00o9s'
+    const templateID = 'template_3bhoapt'
+
+    emailjs.send(serviceID, templateID, params, "XRuHi8PWtslej7DNa")
+        .then(res => {
+        document.getElementById('nomeid').value = ''
+        document.getElementById('emailid').value = ''
+        document.getElementById('mensagem').value = ''
+        console.log(res)
+        alert('Your message was sent')
+        })
+        .catch((err) => console.log('error' + err))
 }
